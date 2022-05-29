@@ -47,7 +47,6 @@
     div{
         height: 100px;
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         border-bottom: 2px solid #eee;
@@ -126,15 +125,4 @@
     text-decoration: none;
     right: 5%;
     bottom: 10%;
-}
-/* 600px */
-@media screen and (max-width:600px) {
-    .articulos {
-        div{
-            p{
-                width: 100%;
-            }
-        }
-        
-    }
 }
