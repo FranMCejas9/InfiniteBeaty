@@ -8,9 +8,11 @@
 
 .navbar{
     a{
+        font-size: clamp(2.4rem, 3vw, 3rem); 
         font-family: 'Lobster', cursive;
         color: #eee;
         span{
+            font-size: clamp(2.4rem, 3vw, 3rem); 
             color: #845EC2;
         }
     }
@@ -56,7 +58,7 @@
         padding: 1rem;
         margin: 0%;
         color: #eee;
-        font-size: clamp(3rem, 2.5vw, 2rem); 
+        font-size: clamp(2rem, 2.5vw, 2rem); 
         background-color: #845EC2;
     }
     div{
@@ -69,14 +71,14 @@
         p{
             width: 100px;
             margin: 0px;
-            font-size: (min(2rem), 1.4vw);
+            font-size: clamp(1.4rem, 1.4vw, 3rem); 
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
         a{
             height: 2rem;
             display: flex;
             align-items: center;
-            font-size: (min(2rem), 1.4vw);
+            font-size: clamp(1.4rem, 1.4vw, 3rem); 
             text-decoration: none;
             margin: 0%;
             color: #eee;

@@ -6,6 +6,7 @@
 }
 
 .navbar a {
+  font-size: clamp(2.4rem, 3vw, 3rem);
   font-family: "Lobster", cursive;
   color: #eee;
 }
@@ -55,7 +56,7 @@
   padding: 1rem;
   margin: 0%;
   color: #eee;
-  font-size: clamp(3rem, 2.5vw, 2rem);
+  font-size: clamp(2rem, 2.5vw, 2rem);
   background-color: #845EC2;
 }
 .articulos div {
@@ -69,14 +70,14 @@
 .articulos div p {
   width: 100px;
   margin: 0px;
-  font-size: 2rem, 1.4vw;
+  font-size: clamp(1.4rem, 1.4vw, 3rem);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .articulos div a {
   height: 2rem;
   display: flex;
   align-items: center;
-  font-size: 2rem, 1.4vw;
+  font-size: clamp(1.4rem, 1.4vw, 3rem);
   text-decoration: none;
   margin: 0%;
   color: #eee;
