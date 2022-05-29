@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -5,6 +7,7 @@
 
 .navbar{
     a{
+        font-family: 'Lobster', cursive;
         color: #eee;
         span{
             color: #845EC2;
@@ -19,6 +22,17 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1{
+        font-size: clamp(3rem, 5vw, 7rem); 
+        text-align: center;
+        width: 100%;
+        background-color: rgba($color: #888, $alpha: 0.3);
+        color: #fff;
+        text-shadow: 0.1rem 0.1rem #333;
+    }
 }
 .banner{
     background-color: #845EC2;
