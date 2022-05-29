@@ -125,4 +125,11 @@
   bottom: 10%;
 }
 
+/* 600px */
+@media screen and (max-width: 600px) {
+  .articulos div p {
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

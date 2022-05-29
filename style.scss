@@ -127,3 +127,14 @@
     right: 5%;
     bottom: 10%;
 }
+/* 600px */
+@media screen and (max-width:600px) {
+    .articulos {
+        div{
+            p{
+                width: 100%;
+            }
+        }
+        
+    }
+}
