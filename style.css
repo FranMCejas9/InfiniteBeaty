@@ -5,12 +5,25 @@
   box-sizing: border-box;
 }
 
-.navbar a {
-  font-size: clamp(2.4rem, 3vw, 3rem);
+.productos {
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+}
+
+.secciones {
+  text-align: center;
+}
+.secciones a {
+  font-size: clamp(1rem, 1.5vw, 3rem);
+  width: 100%;
+}
+
+.logo {
+  font-size: clamp(2rem, 3vw, 3rem);
   font-family: "Lobster", cursive;
   color: #eee;
 }
-.navbar a span {
+.logo span {
+  font-size: clamp(2rem, 3vw, 3rem);
   color: #845EC2;
 }
 
@@ -45,33 +58,47 @@
   color: #eee;
 }
 
+.articuloTitulo {
+  font-size: clamp(2.3rem, 3vw, 3rem);
+  color: #eee;
+  background-color: #333;
+}
+
 .articulos {
-  background-color: rgb(0, 20, 20);
   text-align: center;
 }
 .articulos img {
   border-radius: 1rem 1rem 0px 0px;
+  box-shadow: 0.2rem 0px 0.3rem rgba(136, 136, 136, 0.5);
 }
-.articulos h5 {
+.articulos .articulosColor {
+  border-radius: 0%;
+  box-shadow: 0.2rem 0px 0.3rem rgba(136, 136, 136, 0.5);
+  background-color: #845EC2;
+}
+.articulos .articulosColor h5 {
   padding: 1rem;
   margin: 0%;
   color: #eee;
   font-size: clamp(2rem, 2.5vw, 2rem);
-  background-color: #845EC2;
 }
 .articulos div {
   height: 100px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  border-bottom: 2px solid #eee;
+  border-bottom: 2px solid #333;
   border-radius: 0px 0px 2rem 2rem;
+  background-color: #eee;
+  box-shadow: 0.2rem 0.1rem 0.3rem rgba(136, 136, 136, 0.5);
 }
 .articulos div p {
   width: 100px;
   margin: 0px;
   font-size: clamp(1.4rem, 1.4vw, 3rem);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #333;
 }
 .articulos div a {
   height: 2rem;
@@ -87,9 +114,8 @@
   transition: all 0.3s;
 }
 .articulos div a:hover {
-  padding: clamp(3px, 0.5rem, 0.7rem);
-  background-color: #eee;
-  color: #845EC2;
+  background-color: #333;
+  color: #eee;
   transition: all 0.3s;
 }
 
@@ -137,6 +163,18 @@
   text-decoration: none;
   right: 5%;
   bottom: 10%;
+}
+
+@media screen and (max-width: 992px) {
+  .logo {
+    text-align: center;
+    margin: 0px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .articulos div p {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

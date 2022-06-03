@@ -6,15 +6,25 @@
     box-sizing: border-box;
 }
 
-.navbar{
+.productos{
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+}
+
+.secciones{
+    text-align: center;
     a{
-        font-size: clamp(2.4rem, 3vw, 3rem); 
-        font-family: 'Lobster', cursive;
-        color: #eee;
-        span{
-            font-size: clamp(2.4rem, 3vw, 3rem); 
-            color: #845EC2;
-        }
+        font-size: clamp(1rem, 1.5vw, 3rem); 
+        width: 100%;
+    }
+}
+
+.logo {
+    font-size: clamp(2rem, 3vw, 3rem); 
+    font-family: 'Lobster', cursive;
+    color: #eee;
+    span{
+        font-size: clamp(2rem, 3vw, 3rem); 
+        color: #845EC2;
     }
 }
 
@@ -48,31 +58,44 @@
     }
 }
 
+.articuloTitulo{
+    font-size: clamp(2.3rem, 3vw, 3rem); 
+    color: #eee;
+    background-color: #333;
+}
 .articulos {
-    background-color:rgb(0, 20, 20);
     text-align: center;
     img{
         border-radius: 1rem 1rem 0px 0px;
+        box-shadow: 0.2rem 0px 0.3rem rgba($color: #888, $alpha: 0.5);
     }
-    h5{
-        padding: 1rem;
-        margin: 0%;
-        color: #eee;
-        font-size: clamp(2rem, 2.5vw, 2rem); 
+    .articulosColor{
+        border-radius: 0%;
+        box-shadow: 0.2rem 0px 0.3rem rgba($color: #888, $alpha: 0.5);
         background-color: #845EC2;
+        h5{
+            padding: 1rem;
+            margin: 0%;
+            color: #eee;
+            font-size: clamp(2rem, 2.5vw, 2rem); 
+        }
     }
     div{
         height: 100px;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        border-bottom: 2px solid #eee;
+        border-bottom: 2px solid #333;
         border-radius: 0px 0px 2rem 2rem;
+        background-color: #eee;
+        box-shadow: 0.2rem 0.1rem 0.3rem rgba($color: #888, $alpha: 0.5);
         p{
             width: 100px;
             margin: 0px;
             font-size: clamp(1.4rem, 1.4vw, 3rem); 
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #333;
         }
         a{
             height: 2rem;
@@ -87,9 +110,8 @@
             border-radius: 0.4rem;
             transition: all 0.3s;
             &:hover{
-                padding: clamp(3px, 0.5rem, 0.7rem); 
-                background-color: #eee;
-                color: #845EC2;
+                background-color: #333;
+                color: #eee;
                 transition: all 0.3s;
             }
         }
@@ -142,4 +164,24 @@
     text-decoration: none;
     right: 5%;
     bottom: 10%;
+}
+
+
+@media screen and (max-width:992px) {
+    .logo{
+        text-align: center;
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .articulos {
+        
+        div{
+            p{
+                width: 100%;
+            }
+            }
+        }
+        
 }
