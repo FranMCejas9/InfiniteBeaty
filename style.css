@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 .productos {
   background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
 }
@@ -121,6 +120,28 @@
 
 .productoPrecio {
   color: #eee;
+}
+
+.verMas {
+  margin-bottom: 1%;
+}
+.verMas a {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  font-size: clamp(1.4rem, 1.4vw, 3rem);
+  text-decoration: none;
+  margin: 0%;
+  color: #eee;
+  background-color: #845EC2;
+  padding: clamp(2px, 0.3rem, 0.5rem);
+  border-radius: 0.4rem;
+  transition: all 0.3s;
+}
+.verMas a:hover {
+  background-color: #333;
+  color: #eee;
+  transition: all 0.3s;
 }
 
 .enlaces p {

@@ -16,19 +16,32 @@
     <header>
         <nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-light bg-light border-bottom border-dark">
             <div class="container-fluid">
-                  <div class="col-1 d-lg-none"></div>
-                  <a class="navbar-brand logo col-8 col-lg-2 text-center" href="#">Infinite <span class="">Beauty</span></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav secciones col-lg-12 d-flex justify-content-around">
-                      <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                      <a class="nav-link" href="#gorros">Gorros</a>
-                      <a class="nav-link" href="#carteras">Carteras</a>
-                      <a class="nav-link" href="#bandoleras">Bandoleras</a>
-                    </div>
-                  </div>
+              <div class="col-1 d-lg-none"></div>
+              <a class="navbar-brand logo col-8 col-lg-2 text-center" href="#">Infinite <span class="">Beauty</span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav secciones col-lg-12 d-flex justify-content-around">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/carteras.html">Carteras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/carteras.html#bandoleras">Bandoleras</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Gorros
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="pages/gorros.html#texturizados">Texturizados</a></li>
+                            <li><a class="dropdown-item" href="pages/gorros.html#lisos">Lisos</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -84,126 +97,57 @@
                 <a href="https://api.whatsapp.com/send?phone=542478476404&text=Hola!%20me%20interesa%20comprar%20el%20gorro%20Azul%20Petroleo" target="_blank">Comprar</a>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-4 p-3 articulos" data-aos="fade-up">
-              <img class="w-100" src="img/AzulMarino.jpg" alt="gorro color Azul marino ">
+           <div class="container-fluid">
+             <div class="d-flex justify-content-center">
+              <div class="verMas">
+                <a href="pages/gorros.html">Ver mas</a>
+              </div>
+             </div>
+           </div>
+
+             <!-- Gorros Lisos -->
+             <div class="col-12 p-0" id="lisos">
+              <h2 class="text-center articuloTitulo  p-3">Gorros lisos</h2>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 p-3 articulos" data-aos="fade-up">
+            <img class="w-100" src="../img/bordoLiso.jpg" alt="gorro color Bordó">
+            <div class="articulosColor">
+                <h5>Bordó</h5>
+            </div>
+            <div class="">
+                <p class="productoPrecio">$700</p>
+                <a href="https://api.whatsapp.com/send?phone=542478476404&text=Hola!%20me%20interesa%20comprar%20el%20gorro%20liso%20Bordó" target="_blank">Comprar</a>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 p-3 articulos" data-aos="fade-up">
+              <img class="w-100" src="../img/amarillo pastelLiso.jpg" alt="gorro color amarillo pastel">
               <div class="articulosColor">
-                <h5>Azul marino</h5>
+                  <h5>Amarillo pastel</h5>
               </div>
               <div class="">
-                <p class=" productoPrecio ">$1000</p>
-                <a href="https://api.whatsapp.com/send?phone=542478476404&text=Hola!%20me%20interesa%20comprar%20el%20gorro%20Azul%20Marino" target="_blank">Comprar</a>
+                  <p class="productoPrecio">$700</p>
+                  <a href="https://api.whatsapp.com/send?phone=542478476404&text=Hola!%20me%20interesa%20comprar%20el%20gorro%20liso%20Amarillo%20pastel" target="_blank">Comprar</a>
               </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4 p-3 articulos" data-aos="fade-up">
-              <img class="w-100" src="img/Blanco.jpg" alt="gorro color blanco">
-              <div class="articulosColor">
-                <h5>Blanco</h5>
-              </div>
-              <div class="">
-                <p class=" productoPrecio ">$1000</p>
-                <a href="https://api.whatsapp.com/send?phone=542478476404&text=Hola!%20me%20interesa%20comprar%20el%20gorro%20Blanco" target="_blank">Comprar</a>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4 p-3 articulos" data-aos="fade-up">
-              <img class="w-100" src="img/Coral.jpg" alt="gorro color Coral">
-              <div class="articulosColor">
-                <h5>Coral</h5>
-              </div>
-              <div class="">
-                <p class=" productoPrecio ">$1000</p>
-                <a href="https://api.whatsapp.com/send?phone=542478476404&text=Hola!%20me%20interesa%20comprar%20el%20gorro%20Coral" target="_blank">Comprar</a>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4 p-3 articulos" data-aos="fade-up">
-              <img class="w-100" src="img/Gris melange.jpg" alt="gorro color Gris melange">
-              <div class="articulosColor">
-                <h5>Gris melange</h5>
-              </div>
-              <div class="">
-                <p class=" productoPrecio ">$1000</p>
-                <a href="https://api.whatsapp.com/send?phone=542478476404&text=Hola!%20me%20interesa%20comprar%20el%20gorro%20Gris%20Melange" target="_blank">Comprar</a>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4 p-3 articulos" data-aos="fade-up">
-              <img class="w-100" src="img/Mostaza.jpg" alt="gorro color Mostaza">
-              <div class="articulosColor">
-                <h5>Mostaza</h5>
-              </div>
-              <div class="">
-                <p class=" productoPrecio ">$1000</p>
-                <a href="https://api.whatsapp.com/send?phone=542478476404&text=Hola!%20me%20interesa%20comprar%20el%20gorro%20Mostaza" target="_blank">Comprar</a>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4 p-3 articulos" data-aos="fade-up">
-              <img class="w-100" src="img/Rojo.jpg" alt="gorro color rojo">
-              <div class="articulosColor">
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 p-3 articulos" data-aos="fade-up">
+            <img class="w-100" src="../img/rojoLiso.jpg" alt="gorro color Rojo">
+            <div class="articulosColor">
                 <h5>Rojo</h5>
-              </div>
-              <div class="">
-                <p class=" productoPrecio ">$1000</p>
-                <a href="https://api.whatsapp.com/send?phone=542478476404&text=Hola!%20me%20interesa%20comprar%20el%20gorro%20Rojo" target="_blank">Comprar</a>
-              </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-4 p-3 articulos" data-aos="fade-up">
-              <img class="w-100" src="img/RosaBebé.jpg" alt="gorro color Rosa bebé">
-              <div class="articulosColor">
-                <h5>Rosa bebé</h5>
-              </div>
-              <div class="">
-                <p class=" productoPrecio ">$1000</p>
-                <a href="https://api.whatsapp.com/send?phone=542478476404&text=Hola!%20me%20interesa%20comprar%20el%20gorro%20Rosa%20Bebé" target="_blank">Comprar</a>
-              </div>
+            <div class="">
+                <p class="productoPrecio">$700</p>
+                <a href="https://api.whatsapp.com/send?phone=542478476404&text=Hola!%20me%20interesa%20comprar%20el%20gorro%20liso%20Rojo" target="_blank">Comprar</a>
             </div>
-            <div class="col-12 col-sm-6 col-lg-4 p-3 articulos" data-aos="fade-up">
-              <img class="w-100" src="img/RosaChicle.jpg" alt="gorro color Rosa chicle">
-              <div class="articulosColor">
-                <h5>Rosa chicle</h5>
-              </div>
-              <div class="">
-                <p class=" productoPrecio ">$1000</p>
-                <a href="https://api.whatsapp.com/send?phone=542478476404&text=Hola!%20me%20interesa%20comprar%20el%20gorro%20Rosa%20Chicle" target="_blank">Comprar</a>
-              </div>
+          </div>
+
+          <div class="container-fluid">
+            <div class="d-flex justify-content-center">
+             <div class="verMas">
+               <a href="pages/gorros.html#lisos">Ver mas</a>
+             </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-4 p-3 articulos" data-aos="fade-up">
-              <img class="w-100" src="img/VerdeInglés.jpg" alt="gorro color Verde inglés">
-              <div class="articulosColor">
-                <h5>Verde inglés</h5>
-              </div>
-              <div class="">
-                <p class=" productoPrecio ">$1000</p>
-                <a href="https://api.whatsapp.com/send?phone=542478476404&text=Hola!%20me%20interesa%20comprar%20el%20gorro%20Verde%20Inglés" target="_blank">Comprar</a>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4 p-3 articulos" data-aos="fade-up">
-              <img class="w-100" src="img/VerdeLimón.jpg" alt="gorro color Verde Limón">
-              <div class="articulosColor">
-                <h5>Verde Limón</h5>
-              </div>
-              <div class="">
-                <p class=" productoPrecio ">$1000</p>
-                <a href="https://api.whatsapp.com/send?phone=542478476404&text=Hola!%20me%20interesa%20comprar%20el%20gorro%20Verde%20Limón" target="_blank">Comprar</a>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4 p-3 articulos" data-aos="fade-up">
-              <img class="w-100" src="img/VerdeMilitar.jpg" alt="gorro color Verde militar">
-              <div class="articulosColor">
-                <h5>Verde militar</h5>
-              </div>
-              <div class="">
-                <p class=" productoPrecio ">$1000</p>
-                <a href="https://api.whatsapp.com/send?phone=542478476404&text=Hola!%20me%20interesa%20comprar%20el%20gorro%2Verde%20militar" target="_blank">Comprar</a>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4 p-3 articulos" data-aos="fade-up">
-              <img class="w-100" src="img/Violeta.jpg" alt="gorro color Violeta">
-              <div class="articulosColor">
-                <h5>Violeta</h5>
-              </div>
-              <div class="">
-                <p class=" productoPrecio ">$1000</p>
-                <a href="https://api.whatsapp.com/send?phone=542478476404&text=Hola!%20me%20interesa%20comprar%20el%20gorro%20Violeta" target="_blank">Comprar</a>
-              </div>
-            </div>
+          </div>
+
 
             <!-- Carteras -->
 
@@ -240,24 +184,11 @@
                 <a href="https://api.whatsapp.com/send?phone=542478476404&text=Hola!%20me%20interesa%20comprar%20la%20cartera%20negra" target="_blank">Comprar</a>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-4 p-3 articulos" data-aos="fade-up">
-              <img class="w-100" src="img/carteras/rosa.jpg" alt="cartera color rosa">
-              <div class="articulosColor">
-                <h5>Rosa</h5>
-              </div>
-              <div class="">
-                <p class=" productoPrecio ">$2200</p>
-                <a href="https://api.whatsapp.com/send?phone=542478476404&text=Hola!%20me%20interesa%20comprar%20la%20cartera%20rosa" target="_blank">Comprar</a>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4 p-3 articulos" data-aos="fade-up">
-              <img class="w-100" src="img/carteras/verde.jpg" alt="cartera color verde">
-              <div class="articulosColor">
-                <h5>Verde</h5>
-              </div>
-              <div class="">
-                <p class=" productoPrecio ">$2200</p>
-                <a href="https://api.whatsapp.com/send?phone=542478476404&text=Hola!%20me%20interesa%20comprar%20la%20cartera%20verde" target="_blank">Comprar</a>
+            <div class="container-fluid">
+              <div class="d-flex justify-content-center">
+               <div class="verMas">
+                 <a href="pages/carteras.html">Ver mas</a>
+               </div>
               </div>
             </div>
 
@@ -295,16 +226,14 @@
                 <a href="https://api.whatsapp.com/send?phone=542478476404&text=Hola!%20me%20interesa%20comprar%20la%20bandolera%20negra" target="_blank">Comprar</a>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-4 p-3 articulos" data-aos="fade-up">
-              <img class="w-100" src="img/carteras/bandolera verde.jpg" alt="bandolera color verde">
-              <div class="articulosColor">
-                <h5>Verde</h5>
+            <div class="container-fluid">
+             <div class="d-flex justify-content-center">
+              <div class="verMas">
+                <a href="pages/carteras.html#bandoleras">Ver mas</a>
               </div>
-              <div class="">
-                <p class=" productoPrecio ">$2400</p>
-                <a href="https://api.whatsapp.com/send?phone=542478476404&text=Hola!%20me%20interesa%20comprar%20el%20la%20bandolera%20verdes" target="_blank">Comprar</a>
-              </div>
-            </div>
+             </div>
+           </div>
+
         </div>
     </section>
 
