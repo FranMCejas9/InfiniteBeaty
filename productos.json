@@ -1,0 +1,331 @@
+[
+    { 
+        "id": "1",
+        "img": "../img/Anteojos/1.jpg",
+        "categoria": "Anteojos",
+        "producto":"Anteojo",
+        "tipo":  "Harper",
+        "precio": "1500"
+    },
+    { 
+        "id": "2",
+        "img": "../img/Anteojos/2.jpg",
+        "categoria": "Anteojos",
+        "producto":"Anteojo",
+        "tipo":  "Claudine",
+        "precio": "1500"
+    },
+    { 
+        "id": "3",
+        "img": "../img/Anteojos/3.jpg",
+        "categoria": "Anteojos",
+        "producto":"Anteojo",
+        "tipo":  "Inna",
+        "precio": "1300"
+    },
+    { 
+        "id": "4",
+        "img": "../img/Anteojos/4.jpg",
+        "categoria": "Anteojos",
+        "producto":"Anteojo",
+        "tipo":  "Elaina",
+        "precio": "1500"
+    },
+    { 
+        "id": "5",
+        "img": "../img/Anteojos/5.jpg",
+        "categoria": "Anteojos",
+        "producto":"Anteojo",
+        "tipo":  "Elaina",
+        "precio": "1500"
+    },
+    { 
+        "id": "6",
+        "img": "../img/Anteojos/6.jpg",
+        "categoria": "Anteojos",
+        "producto":"Anteojo",
+        "tipo":  "Elaina",
+        "precio": "1500"
+    },
+    { 
+        "id": "7",
+        "img": "../img/Anteojos/7.jpg",
+        "categoria": "Anteojos",
+        "producto":"Anteojo",
+        "tipo":  "Agata",
+        "precio": "1500"
+    },
+    { 
+        "id": "8",
+        "img": "../img/Anteojos/8.jpg",
+        "categoria": "Anteojos",
+        "producto":"Anteojo",
+        "tipo":  "Priscila",
+        "precio": "1500"
+    },
+    { 
+        "id": "9",
+        "img": "../img/Anteojos/9.jpg",
+        "categoria": "Anteojos",
+        "producto":"Anteojo",
+        "tipo":  "Claudine",
+        "precio": "1300"
+    },
+    { 
+        "id": "10",
+        "img": "../img/Anteojos/10.jpg",
+        "categoria": "Anteojos",
+        "producto":"Anteojo",
+        "tipo":  "Kendall",
+        "precio": "1300"
+    },
+    { 
+        "id": "11",
+        "img": "../img/Anteojos/11.jpg",
+        "categoria": "Anteojos",
+        "producto":"Anteojo",
+        "tipo":  "Kendall",
+        "precio": "1300"
+    },
+    { 
+        "id": "12",
+        "img": "../img/Anteojos/12.jpg",
+        "categoria": "Anteojos",
+        "producto":"Anteojo",
+        "tipo":  "Denise",
+        "precio": "1300"
+    },
+    { 
+        "id": "13",
+        "img": "../img/Anteojos/13.jpg",
+        "categoria": "Anteojos",
+        "producto":"Anteojo",
+        "tipo":  "Denise",
+        "precio": "1300"
+    },
+    { 
+        "id": "14",
+        "img": "../img/Anteojos/14.jpg",
+        "categoria": "Anteojos",
+        "producto":"Anteojo",
+        "tipo":  "Sophia",
+        "precio": "1300"
+    },
+
+
+
+
+
+
+    { 
+        "id": "15",
+        "img": "../img/Aros/1.jpg",
+        "categoria": "Aros",
+        "producto":"Aro",
+        "tipo":  "Con cadena y dije corazon",
+        "precio": "450"
+    },
+    { 
+        "id": "16",
+        "img": "../img/Aros/2.jpg",
+        "categoria": "Aros",
+        "producto":"Aro",
+        "tipo":  "Con cadena y dije estrella",
+        "precio": "450"
+    },
+    { 
+        "id": "17",
+        "img": "../img/Aros/3.jpg",
+        "categoria": "Aros",
+        "producto":"Aro",
+        "tipo":  "Con cadena y dije rayo",
+        "precio": "450"
+    },
+    { 
+        "id": "18",
+        "img": "../img/Aros/4.jpg",
+        "categoria": "Aros",
+        "producto":"Aro",
+        "tipo":  "Con cadena y dije herradura",
+        "precio": "450"
+    },
+    { 
+        "id": "19",
+        "img": "../img/Aros/5.jpg",
+        "categoria": "Aros",
+        "producto":"Aro",
+        "tipo":  "Gancho Francés",
+        "precio": "400"
+    },
+
+
+
+
+
+    { 
+        "id": "20",
+        "img": "../img/Broches/1.jpg",
+        "categoria": "Broches",
+        "producto":"Broche",
+        "tipo":  "Pinza 3 dientes fucsia",
+        "precio": "400"
+    },
+    { 
+        "id": "21",
+        "img": "../img/Broches/2.jpg",
+        "categoria": "Broches",
+        "producto":"Broche",
+        "tipo":  "Pinza 3 dientes violeta",
+        "precio": "400"
+    },
+    { 
+        "id": "22",
+        "img": "../img/Broches/3.jpg",
+        "categoria": "Broches",
+        "producto":"Broche",
+        "tipo":  "Pinza 3 dientes azul",
+        "precio": "400"
+    },
+    { 
+        "id": "23",
+        "img": "../img/Broches/4.jpg",
+        "categoria": "Broches",
+        "producto":"Broche",
+        "tipo":  "Pinza bombe",
+        "precio": "450"
+    },
+    { 
+        "id": "24",
+        "img": "../img/Broches/5.jpg",
+        "categoria": "Broches",
+        "producto":"Broche",
+        "tipo":  "Pinza Pulpo",
+        "precio": "450"
+    },
+    { 
+        "id": "25",
+        "img": "../img/Broches/6.jpg",
+        "categoria": "Broches",
+        "producto":"Broche",
+        "tipo":  "Pinza XL",
+        "precio": "500"
+    },
+    { 
+        "id": "26",
+        "img": "../img/Broches/7.jpg",
+        "categoria": "Broches",
+        "producto":"Broche",
+        "tipo":  "XL Cuadrado violeta",
+        "precio": "550"
+    },
+    { 
+        "id": "27",
+        "img": "../img/Broches/8.jpg",
+        "categoria": "Broches",
+        "producto":"Broche",
+        "tipo":  "XL Cuadrado verde",
+        "precio": "550"
+    },
+    { 
+        "id": "28",
+        "img": "../img/Broches/9.jpg",
+        "categoria": "Broches",
+        "producto":"Broche",
+        "tipo":  "XL Cuadrado azul",
+        "precio": "550"
+    },
+    { 
+        "id": "29",
+        "img": "../img/Broches/10.jpg",
+        "categoria": "Broches",
+        "producto":"Broche",
+        "tipo":  "XL Curvo azul",
+        "precio": "550"
+    },
+    { 
+        "id": "30",
+        "img": "../img/Broches/11.jpg",
+        "categoria": "Broches",
+        "producto":"Broche",
+        "tipo":  "XL Curvo rosa",
+        "precio": "550"
+    },
+    { 
+        "id": "31",
+        "img": "../img/Broches/12.jpg",
+        "categoria": "Broches",
+        "producto":"Broche",
+        "tipo":  "XL Curvo verde",
+        "precio": "550"
+    },
+    { 
+        "id": "32",
+        "img": "../img/Broches/13.jpg",
+        "categoria": "Broches",
+        "producto":"Broche",
+        "tipo":  "XL Curvo beige",
+        "precio": "550"
+    },
+    { 
+        "id": "33",
+        "img": "../img/Broches/14.jpg",
+        "categoria": "Broches",
+        "producto":"Broche",
+        "tipo":  "Pinza bombe rosa",
+        "precio": "450"
+    },
+    { 
+        "id": "34",
+        "img": "../img/Broches/15.jpg",
+        "categoria": "Broches",
+        "producto":"Broche",
+        "tipo":  "Pinza bombe verde",
+        "precio": "450"
+    },
+
+
+
+
+
+
+    { 
+        "id": "35",
+        "img": "../img/Carteras/1.jpg",
+        "categoria": "Carteras",
+        "producto":"Cartera",
+        "tipo":  "Blanca Crocro",
+        "precio": "2700"
+    },
+    { 
+        "id": "36",
+        "img": "../img/Carteras/2.jpg",
+        "categoria": "Carteras",
+        "producto":"Cartera",
+        "tipo":  "Minibag Rojo",
+        "precio": "2700"
+    },
+    { 
+        "id": "37",
+        "img": "../img/Carteras/3.jpg",
+        "categoria": "Carteras",
+        "producto":"Cartera",
+        "tipo":  "Minibag Marrón",
+        "precio": "2700"
+    },
+    { 
+        "id": "38",
+        "img": "../img/Carteras/4.jpg",
+        "categoria": "Carteras",
+        "producto":"Cartera",
+        "tipo":  "Minibag Verde oliva",
+        "precio": "2700"
+    },
+    { 
+        "id": "39",
+        "img": "../img/Carteras/5.jpg",
+        "categoria": "Carteras",
+        "producto":"Cartera",
+        "tipo":  "Minibag Lila",
+        "precio": "2700"
+    }
+]
