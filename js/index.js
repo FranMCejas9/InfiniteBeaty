@@ -65,8 +65,11 @@ function mayorPrecio(el){
                 renderizarFiltro(indice)
             }
             contador +=1
+            if(contador === el.length){
+                contador = 0
+            }
         })
-        
+        console.log(contador)
     })
 }
 
@@ -88,8 +91,11 @@ function menorPrecio(el){
                 renderizarFiltro(indice)
             }
             contador +=1
+            if(contador === el.length){
+                contador = 0
+            }
         })
-        
+        console.log(contador)
     })
 }
 function filtrarCategoria(el){
@@ -133,10 +139,13 @@ fetch('productos.json')
     .then((productos) => {
         generadorDeSecciones(productos);
         crearCard(productos);
-        filtrarCategoria(productos)
-        mayorPrecio(productos)
-        menorPrecio(productos)
+        filtrarCategoria(productos);
+        mayorPrecio(productos);
+        menorPrecio(productos);
     })
 
-
-
+/* 
+    let recargar = document.getElementById("recargarPagina")
+    recargar.addEventListener('click',()=>{
+        console.log('hola')
+    }) */
