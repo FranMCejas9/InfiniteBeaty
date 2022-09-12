@@ -48,22 +48,53 @@ function renderizarFiltro(el){
 
 
 function mayorPrecio(el){
-    let precios = el.map((producto)=>{
-        return producto.precio
+    let contador = 0
+    document.querySelector('#filterMayor').addEventListener('click',()=>{
+        document.querySelector('.productos').innerHTML = ''
+        let precios = el.map((producto)=>{
+            return producto.precio
+        })
+        let preciosFiltrados = precios.sort(function(a, b){return b - a})
+        let filtro = new Set (preciosFiltrados.map(precio =>{
+            return precio
+        }))
+        let segundoFiltro = [...filtro]
+        el.forEach((producto)=>{
+            if(contador < segundoFiltro.length){
+                let indice = el.filter((index)=> index.precio === segundoFiltro[contador])
+                renderizarFiltro(indice)
+            }
+            contador +=1
+        })
+        
     })
-    let preciosFiltrados = precios.sort(function(a, b){return a - b})
 }
 
 function menorPrecio(el){
-    let precios = el.map((producto)=>{
-        return producto.precio
+    let contador = 0
+    document.querySelector('#filterMenor').addEventListener('click',()=>{
+        document.querySelector('.productos').innerHTML = ''
+        let precios = el.map((producto)=>{
+            return producto.precio
+        })
+        let preciosFiltrados = precios.sort(function(a, b){return a - b})
+        let filtro = new Set (preciosFiltrados.map(precio =>{
+            return precio
+        }))
+        let segundoFiltro = [...filtro]
+        el.forEach((producto)=>{
+            if(contador < segundoFiltro.length){
+                let indice = el.filter((index)=> index.precio === segundoFiltro[contador])
+                renderizarFiltro(indice)
+            }
+            contador +=1
+        })
+        
     })
-    let preciosFiltrados = precios.sort(function(a, b){return a - b})
 }
 function filtrarCategoria(el){
     el.forEach((producto)=>{
         let idFiltro = `filter${producto.categoria}`
-        console.log(idFiltro)
         document.querySelector(`#${idFiltro}`).addEventListener('click', (event)=>{ 
             document.querySelector('.productos').innerHTML = ''
             let filtro = event.target.getAttribute("data-categoria")
