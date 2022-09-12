@@ -1,3 +1,4 @@
+
 function generadorDeSecciones(el){
     let secciones = new Set (el.map(producto =>{
         return producto.categoria
@@ -15,6 +16,60 @@ function generadorDeSecciones(el){
         `<li class="nav-item">
             <a class="nav-link" href="#${seccion}Container">${seccion}</a>
         </li>`
+        /* Crear filtros categoria*/
+        document.querySelector('#filtroCategoria').innerHTML += 
+        `<li class="nav-item">
+            <a class="nav-link" data-categoria="${seccion}" id="filter${seccion}">${seccion}</a>
+        </li>`
+    })
+}
+
+
+function renderizarFiltro(el){
+    el.forEach((producto)=>{
+    document.querySelector('.productos').innerHTML +=
+    `<div class="col-12 col-sm-6 col-lg-3 p-3 articulos" data-aos="fade-up">
+            <div class = "productoContainer">
+                <div id="imgContainer">
+                    <img src="${producto.img}" alt="${producto.producto} ${producto.tipo}">
+                </div>
+                <div class="articulosColor">
+                    <h5>${producto.tipo}</h5>
+                </div>
+                <div class="d-flex justify-content-around infoProd">
+                    <p class="productoPrecio">$${producto.precio}</p>
+                    <button class="carritoA btn">Consultar</button">
+                </div>
+            </div>
+        </div>`
+    })
+}
+
+
+
+function mayorPrecio(el){
+    let precios = el.map((producto)=>{
+        return producto.precio
+    })
+    let preciosFiltrados = precios.sort(function(a, b){return a - b})
+}
+
+function menorPrecio(el){
+    let precios = el.map((producto)=>{
+        return producto.precio
+    })
+    let preciosFiltrados = precios.sort(function(a, b){return a - b})
+}
+function filtrarCategoria(el){
+    el.forEach((producto)=>{
+        let idFiltro = `filter${producto.categoria}`
+        console.log(idFiltro)
+        document.querySelector(`#${idFiltro}`).addEventListener('click', (event)=>{ 
+            document.querySelector('.productos').innerHTML = ''
+            let filtro = event.target.getAttribute("data-categoria")
+            let filtrar = el.filter(producto => producto.categoria === filtro)
+            renderizarFiltro(filtrar)
+        })
     })
 }
 
@@ -47,6 +102,9 @@ fetch('productos.json')
     .then((productos) => {
         generadorDeSecciones(productos);
         crearCard(productos);
+        filtrarCategoria(productos)
+        mayorPrecio(productos)
+        menorPrecio(productos)
     })
 
 

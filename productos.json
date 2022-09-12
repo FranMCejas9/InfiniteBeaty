@@ -327,5 +327,407 @@
         "producto":"Cartera",
         "tipo":  "Minibag Lila",
         "precio": "2700"
+    },
+
+
+
+
+
+    { 
+        "id": "40",
+        "img": "../img/Gorras/1.jpg",
+        "categoria": "Gorras",
+        "producto":"Gorra",
+        "tipo":  "Negra",
+        "precio": "1500"
+    },
+    { 
+        "id": "41",
+        "img": "../img/Gorras/2.jpg",
+        "categoria": "Gorras",
+        "producto":"Gorra",
+        "tipo":  "Rosa",
+        "precio": "1500"
+    },
+    { 
+        "id": "42",
+        "img": "../img/Gorras/3.jpg",
+        "categoria": "Gorras",
+        "producto":"Gorra",
+        "tipo":  "L.A Roja",
+        "precio": "1500"
+    },
+    { 
+        "id": "43",
+        "img": "../img/Gorras/4.jpg",
+        "categoria": "Gorras",
+        "producto":"Gorra",
+        "tipo":  "L.A Verde",
+        "precio": "1500"
+    },
+    { 
+        "id": "44",
+        "img": "../img/Gorras/5.jpg",
+        "categoria": "Gorras",
+        "producto":"Gorra",
+        "tipo":  "L.A Rosa",
+        "precio": "1500"
+    },
+    { 
+        "id": "45",
+        "img": "../img/Gorras/6.jpg",
+        "categoria": "Gorras",
+        "producto":"Gorra",
+        "tipo":  "Sonrisa Blanca",
+        "precio": "1500"
+    },
+    { 
+        "id": "46",
+        "img": "../img/Gorras/7.jpg",
+        "categoria": "Gorras",
+        "producto":"Gorra",
+        "tipo":  "Bad Bitch",
+        "precio": "1500"
+    },
+    { 
+        "id": "47",
+        "img": "../img/Gorras/8.jpg",
+        "categoria": "Gorras",
+        "producto":"Gorra",
+        "tipo":  "California Negra",
+        "precio": "1500"
+    },
+    { 
+        "id": "48",
+        "img": "../img/Gorras/9.jpg",
+        "categoria": "Gorras",
+        "producto":"Gorra",
+        "tipo":  "California Verde",
+        "precio": "1500"
+    },
+    { 
+        "id": "49",
+        "img": "../img/Gorras/10.jpg",
+        "categoria": "Gorras",
+        "producto":"Gorra",
+        "tipo":  "NY roja",
+        "precio": "1500"
+    },
+
+
+
+    { 
+        "id": "50",
+        "img": "../img/Gorros/1.jpg",
+        "categoria": "Gorros",
+        "producto":"Gorro",
+        "tipo":  "Puma negro",
+        "precio": "900"
+    },
+    { 
+        "id": "51",
+        "img": "../img/Gorros/2.jpg",
+        "categoria": "Gorros",
+        "producto":"Gorro",
+        "tipo":  "Camell verde",
+        "precio": "900"
+    },
+    { 
+        "id": "52",
+        "img": "../img/Gorros/3.jpg",
+        "categoria": "Gorros",
+        "producto":"Gorro",
+        "tipo":  "Camell amarillo",
+        "precio": "900"
+    },
+    { 
+        "id": "53",
+        "img": "../img/Gorros/4.jpg",
+        "categoria": "Gorros",
+        "producto":"Gorro",
+        "tipo":  "Nike negro",
+        "precio": "900"
+    },
+    { 
+        "id": "54",
+        "img": "../img/Gorros/5.jpg",
+        "categoria": "Gorros",
+        "producto":"Gorro",
+        "tipo":  "Gorila negro",
+        "precio": "900"
+    },
+    { 
+        "id": "55",
+        "img": "../img/Gorros/6.jpg",
+        "categoria": "Gorros",
+        "producto":"Gorro",
+        "tipo":  "Gorila amarillo",
+        "precio": "900"
+    },
+    { 
+        "id": "56",
+        "img": "../img/Gorros/7.jpg",
+        "categoria": "Gorros",
+        "producto":"Gorro",
+        "tipo":  "Escorpion amarillo",
+        "precio": "900"
+    },
+    { 
+        "id": "57",
+        "img": "../img/Gorros/8.jpg",
+        "categoria": "Gorros",
+        "producto":"Gorro",
+        "tipo":  "Caballo verde",
+        "precio": "900"
+    },
+
+    
+
+    
+    { 
+        "id": "58",
+        "img": "../img/Infinitos/1.jpg",
+        "categoria": "Infinitos",
+        "producto":"Infinito",
+        "tipo":  "Mostaza",
+        "precio": "800"
+    },
+    { 
+        "id": "59",
+        "img": "../img/Infinitos/2.jpg",
+        "categoria": "Infinitos",
+        "producto":"Infinito",
+        "tipo":  "Hueso",
+        "precio": "800"
+    },
+    { 
+        "id": "60",
+        "img": "../img/Infinitos/3.jpg",
+        "categoria": "Infinitos",
+        "producto":"Infinito",
+        "tipo":  "Marron",
+        "precio": "800"
+    },
+    { 
+        "id": "61",
+        "img": "../img/Infinitos/4.jpg",
+        "categoria": "Infinitos",
+        "producto":"Infinito",
+        "tipo":  "Verde",
+        "precio": "800"
+    },
+    { 
+        "id": "62",
+        "img": "../img/Infinitos/5.jpg",
+        "categoria": "Infinitos",
+        "producto":"Infinito",
+        "tipo":  "Celeste",
+        "precio": "800"
+    },
+    { 
+        "id": "63",
+        "img": "../img/Infinitos/6.jpg",
+        "categoria": "Infinitos",
+        "producto":"Infinito",
+        "tipo":  "Gris",
+        "precio": "800"
+    },
+    { 
+        "id": "64",
+        "img": "../img/Infinitos/7.jpg",
+        "categoria": "Infinitos",
+        "producto":"Infinito",
+        "tipo":  "Amarillo claro",
+        "precio": "800"
+    },
+
+
+
+
+
+    
+    { 
+        "id": "65",
+        "img": "../img/Medias/1.jpg",
+        "categoria": "Medias",
+        "producto":"Media",
+        "tipo":  "Marcianos blanca",
+        "precio": "500"
+    },
+    { 
+        "id": "66",
+        "img": "../img/Medias/2.jpg",
+        "categoria": "Medias",
+        "producto":"Media",
+        "tipo":  "Homero diablo",
+        "precio": "500"
+    },
+
+
+
+
+
+    
+    { 
+        "id": "67",
+        "img": "../img/Pilusos/1.jpg",
+        "categoria": "Pilusos",
+        "producto":"Piluso",
+        "tipo":  "Piluso con argolla azul",
+        "precio": "1100"
+    },
+    { 
+        "id": "68",
+        "img": "../img/Pilusos/2.jpg",
+        "categoria": "Pilusos",
+        "producto":"Piluso",
+        "tipo":  "Piluso con argolla arena",
+        "precio": "1100"
+    },
+
+    { 
+        "id": "69",
+        "img": "../img/Pilusos/3.jpg",
+        "categoria": "Pilusos",
+        "producto":"Piluso",
+        "tipo":  "Piluso con argolla amarillo",
+        "precio": "1100"
+    },
+
+    { 
+        "id": "70",
+        "img": "../img/Pilusos/4.jpg",
+        "categoria": "Pilusos",
+        "producto":"Piluso",
+        "tipo":  "Piluso con argolla rojo",
+        "precio": "1100"
+    },
+
+    { 
+        "id": "71",
+        "img": "../img/Pilusos/5.jpg",
+        "categoria": "Pilusos",
+        "producto":"Piluso",
+        "tipo":  "Piluso con argolla blanco",
+        "precio": "1100"
+    },
+
+    { 
+        "id": "72",
+        "img": "../img/Pilusos/6.jpg",
+        "categoria": "Pilusos",
+        "producto":"Piluso",
+        "tipo":  "Piluso con argolla celeste",
+        "precio": "1100"
+    },
+
+    { 
+        "id": "74",
+        "img": "../img/Pilusos/7.jpg",
+        "categoria": "Pilusos",
+        "producto":"Piluso",
+        "tipo":  "Piluso con argolla celeste claro",
+        "precio": "1100"
+    },
+
+    { 
+        "id": "75",
+        "img": "../img/Pilusos/8.jpg",
+        "categoria": "Pilusos",
+        "producto":"Piluso",
+        "tipo":  "Piluso rosa",
+        "precio": "1000"
+    },
+
+    { 
+        "id": "76",
+        "img": "../img/Pilusos/9.jpg",
+        "categoria": "Pilusos",
+        "producto":"Piluso",
+        "tipo":  "Piluso aqua",
+        "precio": "1000"
+    },
+
+    { 
+        "id": "77",
+        "img": "../img/Pilusos/10.jpg",
+        "categoria": "Pilusos",
+        "producto":"Piluso",
+        "tipo":  "Piluso celeste claro",
+        "precio": "1000"
+    },
+
+    { 
+        "id": "78",
+        "img": "../img/Pilusos/11.jpg",
+        "categoria": "Pilusos",
+        "producto":"Piluso",
+        "tipo":  "Piluso celeste",
+        "precio": "1000"
+    },
+
+    { 
+        "id": "79",
+        "img": "../img/Pilusos/12.jpg",
+        "categoria": "Pilusos",
+        "producto":"Piluso",
+        "tipo":  "Piluso azul",
+        "precio": "1000"
+    },
+
+    { 
+        "id": "80",
+        "img": "../img/Pilusos/13.jpg",
+        "categoria": "Pilusos",
+        "producto":"Piluso",
+        "tipo":  "Piluso gris",
+        "precio": "1000"
+    },
+
+    { 
+        "id": "81",
+        "img": "../img/Pilusos/14.jpg",
+        "categoria": "Pilusos",
+        "producto":"Piluso",
+        "tipo":  "Piluso rojo",
+        "precio": "1000"
+    },
+
+    { 
+        "id": "82",
+        "img": "../img/Pilusos/15.jpg",
+        "categoria": "Pilusos",
+        "producto":"Piluso",
+        "tipo":  "Piluso amarillo",
+        "precio": "1000"
+    },
+
+    { 
+        "id": "83",
+        "img": "../img/Pilusos/16.jpg",
+        "categoria": "Pilusos",
+        "producto":"Piluso",
+        "tipo":  "Piluso violeta",
+        "precio": "1000"
+    },
+
+    { 
+        "id": "84",
+        "img": "../img/Pilusos/17.jpg",
+        "categoria": "Pilusos",
+        "producto":"Piluso",
+        "tipo":  "Piluso arena",
+        "precio": "1000"
+    },
+
+    { 
+        "id": "85",
+        "img": "../img/Pilusos/18.jpg",
+        "categoria": "Pilusos",
+        "producto":"Piluso",
+        "tipo":  "Piluso blanco",
+        "precio": "1000"
     }
+
+
 ]
