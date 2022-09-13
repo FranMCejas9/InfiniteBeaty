@@ -104,12 +104,7 @@ function filtrarCategoria(el){
         let idFiltro = `filter${producto.categoria}`
         let idFiltro2 = `filter${producto.categoria}Nav`
         document.querySelector(`#${idFiltro2}`).addEventListener('click', (event)=>{ 
-            document.querySelector('.productos').innerHTML = ''
-            document.querySelector('#navEnlaces').innerHTML = ''
-            document.querySelector('#filtroCategoria').innerHTML = ''
-            generadorDeSecciones(el)
-            crearCard(el);
-            location.href = `https://infinite-beauty.netlify.app/#${producto.categoria}Container`
+            location.href = `index.html#${producto.categoria}Container`
         })
         document.querySelector(`#${idFiltro}`).addEventListener('click', (event)=>{ 
             document.querySelector('.productos').innerHTML = ''
