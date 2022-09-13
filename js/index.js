@@ -14,7 +14,7 @@ function generadorDeSecciones(el){
         /* Crear secciones en el navBar*/
         document.querySelector('#navEnlaces').innerHTML += 
         `<li class="nav-item">
-            <a class="nav-link" href="#${seccion}Container">${seccion}</a>
+            <a class="nav-link" data-categoria="${seccion}" id="filter${seccion}Nav">${seccion}</a>
         </li>`
         /* Crear filtros categoria*/
         document.querySelector('#filtroCategoria').innerHTML += 
@@ -23,6 +23,7 @@ function generadorDeSecciones(el){
         </li>`
     })
 }
+
 
 
 function renderizarFiltro(el){
@@ -101,6 +102,13 @@ function menorPrecio(el){
 function filtrarCategoria(el){
     el.forEach((producto)=>{
         let idFiltro = `filter${producto.categoria}`
+        let idFiltro2 = `filter${producto.categoria}Nav`
+        document.querySelector(`#${idFiltro2}`).addEventListener('click', (event)=>{ 
+            document.querySelector('.productos').innerHTML = ''
+            generadorDeSecciones(el)
+            crearCard(el);
+            location.href = `https://infinite-beauty.netlify.app/#${producto.categoria}Container`
+        })
         document.querySelector(`#${idFiltro}`).addEventListener('click', (event)=>{ 
             document.querySelector('.productos').innerHTML = ''
             let filtro = event.target.getAttribute("data-categoria")
@@ -124,7 +132,7 @@ function crearCard(el){
                 </div>
                 <div class="d-flex justify-content-around infoProd">
                     <p class="productoPrecio">$${producto.precio}</p>
-                    <button class="carritoA btn">Consultar</button">
+                    <button class="consultar${producto.id}" btn">Consultar</button">
                 </div>
             </div>
         </div>`
@@ -133,19 +141,22 @@ function crearCard(el){
 
 
 
+function consultarProducto(el){
+    el.forEach((producto)=>{
+        let botonConsultar = `consultar${producto.id}`
+        document.querySelector(`.${botonConsultar}`).addEventListener('click', ()=>{
+            location.href = `https://api.whatsapp.com/send?phone=542478476404&text=Hola!%20me%20gustaria%20saber%20si%20tenés%20disponible%20${producto.producto}%20${producto.tipo}`
+        })
+    })
+}
 
 fetch('productos.json')
     .then((response)=>response.json())
     .then((productos) => {
         generadorDeSecciones(productos);
         crearCard(productos);
+        consultarProducto(productos)
         filtrarCategoria(productos);
         mayorPrecio(productos);
         menorPrecio(productos);
     })
-
-/* 
-    let recargar = document.getElementById("recargarPagina")
-    recargar.addEventListener('click',()=>{
-        console.log('hola')
-    }) */
