@@ -56,6 +56,15 @@
         color: #333;
     }
 }
+
+
+.spinnerLoading{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .productos{
     background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
 }
@@ -193,17 +202,26 @@
             align-items: center;
             height: 60px;
             background-color: #eee;
-            p{
-            margin: 0px;
-            color: #333;
-            }
-            button{
-                background-color: #845EC2;
-                color: #eee;
-                transition: all 0.4s;
-                &:hover{
-                    background-color: #333;
+            div{
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                p{
+                    margin: 0px;
+                    color: #333;
+                }
+                button{
+                    padding: 0.2rem;
+                    border-radius: 0.3rem;
+                    border: 0px;
+                    background-color: #845EC2;
+                    color: #eee;
                     transition: all 0.4s;
+                    &:hover{
+                        background-color: #333;
+                        transition: all 0.4s;
+                    }
                 }
             }
         }

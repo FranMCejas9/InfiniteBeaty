@@ -10,16 +10,14 @@ function generadorDeSecciones(el){
         filtroCategoria(seccion);
     })
 }
-
-
 function seccionesBody(el){
     /* Crear secciones en el body */
-    document.querySelector('.productos').innerHTML +=
-    `<div class="col-12 p-0">
-        <h2 class="text-center articuloTitulo  p-3 " id="${el}Container">${el}</h2>
-    </div>
-    <div id="${el}" class="row p-0 m-0"></div>`
-}
+        document.querySelector('.productos').innerHTML +=
+        `<div class="col-12 p-0">
+            <h2 class="text-center articuloTitulo  p-3 " id="${el}Container">${el}</h2>
+        </div>
+        <div id="${el}" class="row p-0 m-0"></div>`;
+    }
 
 function seccionesNavBar(el){
     /* Crear secciones en el navBar*/
@@ -37,24 +35,44 @@ function filtroCategoria(el){
     </li>`
 }
 
+
+function agregarSpinner(el){
+    document.querySelector(el).innerHTML = `
+    <div class="spinnerLoading">
+        <div class="spinner-border " role="status">
+            <span class="visually-hidden"></span>
+        </div
+    </div>`
+}
+
+function quitarSpinner(el){
+    let padre = document.querySelector(el);
+    let hijo = document.querySelector(".spinnerLoading");
+    padre.removeChild(hijo)
+}
+
 function renderizarFiltro(el){
     el.forEach((producto)=>{
-    document.querySelector('.productos').innerHTML +=
-    `<div class="col-12 col-sm-6 col-lg-3 p-3 articulos" data-aos="fade-up">
-            <div class = "productoContainer">
-                <div id="imgContainer">
-                    <img src="${producto.img}" alt="${producto.producto} ${producto.tipo}">
+        document.querySelector('.productos').innerHTML +=
+        `<div class="col-12 col-sm-6 col-lg-3 p-3 articulos">
+                <div class = "productoContainer">
+                    <div id="imgContainer">
+                        <img src="${producto.img}" alt="${producto.producto} ${producto.tipo}">
+                    </div>
+                    <div class="articulosColor">
+                        <h5>${producto.tipo}</h5>
+                    </div>
+                    <div class="infoProd">
+                        <div>
+                            <p class="productoPrecio">$${producto.precio}</p>
+                        </div>
+                        <div>
+                            <button class="consultar${producto.id}" btn">Consultar</button">
+                        </div>
+                    </div>
                 </div>
-                <div class="articulosColor">
-                    <h5>${producto.tipo}</h5>
-                </div>
-                <div class="d-flex justify-content-around infoProd">
-                    <p class="productoPrecio">$${producto.precio}</p>
-                    <button class="carritoA btn">Consultar</button">
-                </div>
-            </div>
-        </div>`
-    })
+            </div>`
+        });
 }
 
 
@@ -71,17 +89,21 @@ function mayorPrecio(el){
             return precio
         }))
         let segundoFiltro = [...filtro]
-        el.forEach((producto)=>{
-            if(contador < segundoFiltro.length){
-                let indice = el.filter((index)=> index.precio === segundoFiltro[contador])
-                renderizarFiltro(indice)
-            }
-            contador +=1
-            if(contador === el.length){
-                contador = 0
-            }
+        agregarSpinner('.productos');
+        setTimeout(() => {
+            quitarSpinner('.productos');
+            el.forEach(()=>{
+                if(contador < segundoFiltro.length){
+                    let indice = el.filter((index)=> index.precio === segundoFiltro[contador])
+                    renderizarFiltro(indice)
+                }
+                contador +=1
+                if(contador === el.length){
+                    contador = 0
+                };
         })
-        console.log(contador)
+        }, 2000);
+        
     })
 }
 
@@ -97,80 +119,97 @@ function menorPrecio(el){
             return precio
         }))
         let segundoFiltro = [...filtro]
-        el.forEach((producto)=>{
-            if(contador < segundoFiltro.length){
-                let indice = el.filter((index)=> index.precio === segundoFiltro[contador])
-                renderizarFiltro(indice)
-            }
-            contador +=1
-            if(contador === el.length){
-                contador = 0
-            }
+        agregarSpinner('.productos');
+        setTimeout(() => {
+            quitarSpinner('.productos');
+            el.forEach(()=>{
+                if(contador < segundoFiltro.length){
+                    let indice = el.filter((index)=> index.precio === segundoFiltro[contador])
+                    renderizarFiltro(indice)
+                }
+                contador +=1
+                if(contador === el.length){
+                    contador = 0
+                };
         })
-        console.log(contador)
+        }, 2000);
     })
 }
 
-function redireccionar(el){
-    el.forEach((producto)=>{
-        let idFiltro2 = `filter${producto.categoria}Nav`
-        document.querySelector(`#${idFiltro2}`).addEventListener('click', (event)=>{ 
-            document.querySelector('.productos').innerHTML = ''
-            let secciones = new Set (el.map(producto =>{
-                return producto.categoria
-            }))
-            let seccionesFiltrado = [...secciones];
-            seccionesFiltrado.forEach(seccion=>{
-                seccionesBody(seccion);
-            })
-            crearCard(el);
-            location.href = `#${producto.categoria}Container`
-        })
-    })
-}
+
 
 function filtrarCategoria(el){
     el.forEach((producto)=>{
         let idFiltro = `filter${producto.categoria}`
+        let idFiltro2 = `filter${producto.categoria}Nav`
+        document.querySelector(`#${idFiltro2}`).addEventListener('click', (event)=>{ 
+            document.querySelector('.productos').innerHTML = ''
+            let filtro = event.target.getAttribute("data-categoria")
+            let filtrar = el.filter(producto => producto.categoria === filtro)
+            agregarSpinner('.productos');
+            setTimeout(() => {
+                quitarSpinner('.productos');
+                renderizarFiltro(filtrar);
+            }, 2000);
+        })
         document.querySelector(`#${idFiltro}`).addEventListener('click', (event)=>{ 
             document.querySelector('.productos').innerHTML = ''
             let filtro = event.target.getAttribute("data-categoria")
             let filtrar = el.filter(producto => producto.categoria === filtro)
-            renderizarFiltro(filtrar)
-        })
+            agregarSpinner('.productos');
+            setTimeout(() => {
+                quitarSpinner('.productos');
+                renderizarFiltro(filtrar);
+            }, 2000);
+    })
     })
 }
 
 /* Generar cards en el body */
 function crearCard(el){
+    
     el.forEach((producto)=>{
-        document.getElementById(producto.categoria).innerHTML +=
-        `<div class="col-12 col-sm-6 col-lg-3 p-3 articulos" data-aos="fade-up">
-            <div class = "productoContainer">
-                <div id="imgContainer">
-                    <img src="${producto.img}" alt="${producto.producto} ${producto.tipo}">
+        agregarSpinner(`#${producto.categoria}`);
+        setTimeout(() => {
+            quitarSpinner(`#${producto.categoria}`)
+        }, 2005);
+    })
+    setTimeout(() => {
+        el.forEach((producto)=>{
+            document.getElementById(producto.categoria).innerHTML +=
+            `<div class="col-12 col-sm-6 col-lg-3 p-3 articulos">
+                <div class = "productoContainer">
+                    <div id="imgContainer">
+                        <img src="${producto.img}" alt="${producto.producto} ${producto.tipo}">
+                    </div>
+                    <div class="articulosColor">
+                        <h5>${producto.tipo}</h5>
+                    </div>
+                    <div class="infoProd">
+                        <div>
+                            <p class="productoPrecio">$${producto.precio}</p>
+                        </div>
+                        <div>
+                            <button class="consultar${producto.id}" btn">Consultar</button">
+                        </div>
+                    </div>
                 </div>
-                <div class="articulosColor">
-                    <h5>${producto.tipo}</h5>
-                </div>
-                <div class="d-flex justify-content-around infoProd">
-                    <p class="productoPrecio">$${producto.precio}</p>
-                    <button class="consultar${producto.id}" btn">Consultar</button">
-                </div>
-            </div>
-        </div>`
-        })
+            </div>`
+            });
+    }, 2005);
 }
 
 
 
 function consultarProducto(el){
+    setTimeout(() => {
     el.forEach((producto)=>{
         let botonConsultar = `consultar${producto.id}`
         document.querySelector(`.${botonConsultar}`).addEventListener('click', ()=>{
             location.href = `https://api.whatsapp.com/send?phone=542478476404&text=Hola!%20me%20gustaria%20saber%20si%20tenés%20disponible%20${producto.producto}%20${producto.tipo}`
         })
-    })
+    });
+    }, 2010);
 }
 
 fetch('productos.json')
@@ -182,5 +221,4 @@ fetch('productos.json')
         filtrarCategoria(productos);
         mayorPrecio(productos);
         menorPrecio(productos);
-        redireccionar(productos)
     })

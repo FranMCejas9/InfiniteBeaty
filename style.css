@@ -48,6 +48,14 @@
   color: #333;
 }
 
+.spinnerLoading {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .productos {
   background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
 }
@@ -195,16 +203,25 @@
   height: 60px;
   background-color: #eee;
 }
-.articulos .productoContainer .infoProd p {
+.articulos .productoContainer .infoProd div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.articulos .productoContainer .infoProd div p {
   margin: 0px;
   color: #333;
 }
-.articulos .productoContainer .infoProd button {
+.articulos .productoContainer .infoProd div button {
+  padding: 0.2rem;
+  border-radius: 0.3rem;
+  border: 0px;
   background-color: #845EC2;
   color: #eee;
   transition: all 0.4s;
 }
-.articulos .productoContainer .infoProd button:hover {
+.articulos .productoContainer .infoProd div button:hover {
   background-color: #333;
   transition: all 0.4s;
 }
