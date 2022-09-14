@@ -64,8 +64,11 @@
   text-align: center;
 }
 .secciones a {
-  font-size: clamp(1rem, 1.5vw, 3rem);
+  font-size: clamp(1rem, 1.3vw, 2.4rem);
   width: 100%;
+}
+.secciones ahover {
+  cursor: pointer;
 }
 
 .logo {

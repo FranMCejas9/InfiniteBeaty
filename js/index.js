@@ -73,6 +73,7 @@ function renderizarFiltro(el){
                 </div>
             </div>`
         });
+    consultarProducto(el)
 }
 
 
@@ -103,7 +104,6 @@ function mayorPrecio(el){
                 };
         })
         }, 2000);
-        
     })
 }
 
@@ -167,7 +167,6 @@ function filtrarCategoria(el){
 
 /* Generar cards en el body */
 function crearCard(el){
-    
     el.forEach((producto)=>{
         agregarSpinner(`#${producto.categoria}`);
         setTimeout(() => {
@@ -217,7 +216,7 @@ fetch('productos.json')
     .then((productos) => {
         generadorDeSecciones(productos);
         crearCard(productos);
-        consultarProducto(productos)
+        consultarProducto(productos);
         filtrarCategoria(productos);
         mayorPrecio(productos);
         menorPrecio(productos);
