@@ -115,17 +115,16 @@ function redireccionar(el){
     el.forEach((producto)=>{
         let idFiltro2 = `filter${producto.categoria}Nav`
         document.querySelector(`#${idFiltro2}`).addEventListener('click', (event)=>{ 
-            /* document.querySelector('.productos').innerHTML = ''
+            document.querySelector('.productos').innerHTML = ''
             let secciones = new Set (el.map(producto =>{
                 return producto.categoria
             }))
             let seccionesFiltrado = [...secciones];
             seccionesFiltrado.forEach(seccion=>{
                 seccionesBody(seccion);
-                filtroCategoria(seccion);
             })
-            crearCard(el); */
-            location.href = `https://infinite-beauty.netlify.app/#${producto.categoria}Container`
+            crearCard(el);
+            location.href = `#${producto.categoria}Container`
         })
     })
 }
