@@ -5,26 +5,37 @@ function generadorDeSecciones(el){
     }))
     let seccionesFiltrado = [...secciones];
     seccionesFiltrado.forEach(seccion=>{
-        /* Crear secciones en el body */
-        document.querySelector('.productos').innerHTML +=
-        `<div class="col-12 p-0">
-            <h2 class="text-center articuloTitulo  p-3 " id="${seccion}Container">${seccion}</h2>
-        </div>
-        <div id="${seccion}" class="row p-0 m-0"></div>`
-        /* Crear secciones en el navBar*/
-        document.querySelector('#navEnlaces').innerHTML += 
-        `<li class="nav-item">
-            <a class="nav-link" data-categoria="${seccion}" id="filter${seccion}Nav">${seccion}</a>
-        </li>`
-        /* Crear filtros categoria*/
-        document.querySelector('#filtroCategoria').innerHTML += 
-        `<li class="nav-item">
-            <a class="nav-link" data-categoria="${seccion}" id="filter${seccion}">${seccion}</a>
-        </li>`
+        seccionesBody(seccion);
+        seccionesNavBar(seccion);
+        filtroCategoria(seccion);
     })
 }
 
 
+function seccionesBody(el){
+    /* Crear secciones en el body */
+    document.querySelector('.productos').innerHTML +=
+    `<div class="col-12 p-0">
+        <h2 class="text-center articuloTitulo  p-3 " id="${el}Container">${el}</h2>
+    </div>
+    <div id="${el}" class="row p-0 m-0"></div>`
+}
+
+function seccionesNavBar(el){
+    /* Crear secciones en el navBar*/
+    document.querySelector('#navEnlaces').innerHTML += 
+    `<li class="nav-item">
+        <a class="nav-link" data-categoria="${el}" id="filter${el}Nav">${el}</a>
+    </li>`
+}
+
+function filtroCategoria(el){
+    /* Crear filtros categoria*/
+    document.querySelector('#filtroCategoria').innerHTML += 
+    `<li class="nav-item">
+        <a class="nav-link" data-categoria="${el}" id="filter${el}">${el}</a>
+    </li>`
+}
 
 function renderizarFiltro(el){
     el.forEach((producto)=>{
@@ -99,13 +110,29 @@ function menorPrecio(el){
         console.log(contador)
     })
 }
+
+function redireccionar(el){
+    el.forEach((producto)=>{
+        let idFiltro2 = `filter${producto.categoria}Nav`
+        document.querySelector(`#${idFiltro2}`).addEventListener('click', (event)=>{ 
+            /* document.querySelector('.productos').innerHTML = ''
+            let secciones = new Set (el.map(producto =>{
+                return producto.categoria
+            }))
+            let seccionesFiltrado = [...secciones];
+            seccionesFiltrado.forEach(seccion=>{
+                seccionesBody(seccion);
+                filtroCategoria(seccion);
+            })
+            crearCard(el); */
+            location.href = `https://infinite-beauty.netlify.app/#${producto.categoria}Container`
+        })
+    })
+}
+
 function filtrarCategoria(el){
     el.forEach((producto)=>{
         let idFiltro = `filter${producto.categoria}`
-        let idFiltro2 = `filter${producto.categoria}Nav`
-        document.querySelector(`#${idFiltro2}`).addEventListener('click', (event)=>{ 
-            location.href = `index.html#${producto.categoria}Container`
-        })
         document.querySelector(`#${idFiltro}`).addEventListener('click', (event)=>{ 
             document.querySelector('.productos').innerHTML = ''
             let filtro = event.target.getAttribute("data-categoria")
@@ -156,4 +183,5 @@ fetch('productos.json')
         filtrarCategoria(productos);
         mayorPrecio(productos);
         menorPrecio(productos);
+        redireccionar(productos)
     })
