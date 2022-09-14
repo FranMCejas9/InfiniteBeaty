@@ -157,6 +157,7 @@ function filtrarCategoria(el){
                     seccionesBody(seccion);
                 })
                 crearCard(el);
+                consultarProducto(el)
                 setTimeout(() => {
                     location.href = (`#${producto.categoria}Container`)
                 }, 2005);
