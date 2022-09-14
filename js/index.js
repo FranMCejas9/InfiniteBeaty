@@ -54,7 +54,7 @@ function quitarSpinner(el){
 function renderizarFiltro(el){
     el.forEach((producto)=>{
         document.querySelector('.productos').innerHTML +=
-        `<div class="col-12 col-sm-6 col-lg-3 p-3 articulos">
+        `<div class="col-12 col-sm-6 col-lg-3 p-3 articulos"  data-cortar= "cortar">
                 <div class = "productoContainer">
                     <div id="imgContainer">
                         <img src="${producto.img}" alt="${producto.producto} ${producto.tipo}">
@@ -143,14 +143,24 @@ function filtrarCategoria(el){
         let idFiltro = `filter${producto.categoria}`
         let idFiltro2 = `filter${producto.categoria}Nav`
         document.querySelector(`#${idFiltro2}`).addEventListener('click', (event)=>{ 
-            document.querySelector('.productos').innerHTML = ''
-            let filtro = event.target.getAttribute("data-categoria")
-            let filtrar = el.filter(producto => producto.categoria === filtro)
-            agregarSpinner('.productos');
-            setTimeout(() => {
-                quitarSpinner('.productos');
-                renderizarFiltro(filtrar);
-            }, 2000);
+            let nodo = document.querySelector('.productos')
+            let nodoHijo = nodo.firstElementChild.getAttribute('data-cortar')
+            if(nodoHijo != 'cortar'){
+                location.href = `#${producto.categoria}Container`
+            } else if(nodoHijo === 'cortar'){
+                document.querySelector('.productos').innerHTML = "";
+                let secciones = new Set (el.map(producto =>{
+                    return producto.categoria
+                }))
+                let seccionesFiltrado = [...secciones];
+                seccionesFiltrado.forEach(seccion=>{
+                    seccionesBody(seccion);
+                })
+                crearCard(el);
+                setTimeout(() => {
+                    location.href = (`#${producto.categoria}Container`)
+                }, 2005);
+            }
         })
         document.querySelector(`#${idFiltro}`).addEventListener('click', (event)=>{ 
             document.querySelector('.productos').innerHTML = ''

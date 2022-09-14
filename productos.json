@@ -378,7 +378,7 @@
         "img": "../img/Gorras/6.jpg",
         "categoria": "Gorras",
         "producto":"Gorra",
-        "tipo":  "Sonrisa Blanca",
+        "tipo":  "Carita Blanca",
         "precio": "1500"
     },
     { 
@@ -429,7 +429,7 @@
         "img": "../img/Gorros/2.jpg",
         "categoria": "Gorros",
         "producto":"Gorro",
-        "tipo":  "Camell verde",
+        "tipo":  "Camello verde",
         "precio": "900"
     },
     { 
@@ -437,7 +437,7 @@
         "img": "../img/Gorros/3.jpg",
         "categoria": "Gorros",
         "producto":"Gorro",
-        "tipo":  "Camell amarillo",
+        "tipo":  "Camello amarillo",
         "precio": "900"
     },
     { 
@@ -550,7 +550,7 @@
         "id": "65",
         "img": "../img/Medias/1.jpg",
         "categoria": "Medias",
-        "producto":"Media",
+        "producto":"Media caña",
         "tipo":  "Marcianos blanca",
         "precio": "500"
     },
@@ -558,7 +558,7 @@
         "id": "66",
         "img": "../img/Medias/2.jpg",
         "categoria": "Medias",
-        "producto":"Media",
+        "producto":"Media caña",
         "tipo":  "Homero diablo",
         "precio": "500"
     },
@@ -573,7 +573,7 @@
         "img": "../img/Pilusos/1.jpg",
         "categoria": "Pilusos",
         "producto":"Piluso",
-        "tipo":  "Piluso con argolla azul",
+        "tipo":  "Azul con argollas",
         "precio": "1100"
     },
     { 
@@ -581,7 +581,7 @@
         "img": "../img/Pilusos/2.jpg",
         "categoria": "Pilusos",
         "producto":"Piluso",
-        "tipo":  "Piluso con argolla arena",
+        "tipo":  "Arena con argollas",
         "precio": "1100"
     },
 
@@ -590,7 +590,7 @@
         "img": "../img/Pilusos/3.jpg",
         "categoria": "Pilusos",
         "producto":"Piluso",
-        "tipo":  "Piluso con argolla amarillo",
+        "tipo":  "Amarillo con argollas",
         "precio": "1100"
     },
 
@@ -599,7 +599,7 @@
         "img": "../img/Pilusos/4.jpg",
         "categoria": "Pilusos",
         "producto":"Piluso",
-        "tipo":  "Piluso con argolla rojo",
+        "tipo":  "Rojo con argollas",
         "precio": "1100"
     },
 
@@ -608,7 +608,7 @@
         "img": "../img/Pilusos/5.jpg",
         "categoria": "Pilusos",
         "producto":"Piluso",
-        "tipo":  "Piluso con argolla blanco",
+        "tipo":  "Blanco con argollas",
         "precio": "1100"
     },
 
@@ -617,7 +617,7 @@
         "img": "../img/Pilusos/6.jpg",
         "categoria": "Pilusos",
         "producto":"Piluso",
-        "tipo":  "Piluso con argolla celeste",
+        "tipo":  "Celeste con argollas",
         "precio": "1100"
     },
 
@@ -626,7 +626,7 @@
         "img": "../img/Pilusos/7.jpg",
         "categoria": "Pilusos",
         "producto":"Piluso",
-        "tipo":  "Piluso con argolla celeste claro",
+        "tipo":  "Celete claro con argollas",
         "precio": "1100"
     },
 
@@ -635,7 +635,7 @@
         "img": "../img/Pilusos/8.jpg",
         "categoria": "Pilusos",
         "producto":"Piluso",
-        "tipo":  "Piluso rosa",
+        "tipo":  "Rosa",
         "precio": "1000"
     },
 
@@ -644,7 +644,7 @@
         "img": "../img/Pilusos/9.jpg",
         "categoria": "Pilusos",
         "producto":"Piluso",
-        "tipo":  "Piluso aqua",
+        "tipo":  "Aqua",
         "precio": "1000"
     },
 
@@ -653,7 +653,7 @@
         "img": "../img/Pilusos/10.jpg",
         "categoria": "Pilusos",
         "producto":"Piluso",
-        "tipo":  "Piluso celeste claro",
+        "tipo":  "Celeste claro",
         "precio": "1000"
     },
 
@@ -662,7 +662,7 @@
         "img": "../img/Pilusos/11.jpg",
         "categoria": "Pilusos",
         "producto":"Piluso",
-        "tipo":  "Piluso celeste",
+        "tipo":  "Celeste",
         "precio": "1000"
     },
 
@@ -671,7 +671,7 @@
         "img": "../img/Pilusos/12.jpg",
         "categoria": "Pilusos",
         "producto":"Piluso",
-        "tipo":  "Piluso azul",
+        "tipo":  "Azul",
         "precio": "1000"
     },
 
@@ -680,7 +680,7 @@
         "img": "../img/Pilusos/13.jpg",
         "categoria": "Pilusos",
         "producto":"Piluso",
-        "tipo":  "Piluso gris",
+        "tipo":  "Gris",
         "precio": "1000"
     },
 
@@ -689,7 +689,7 @@
         "img": "../img/Pilusos/14.jpg",
         "categoria": "Pilusos",
         "producto":"Piluso",
-        "tipo":  "Piluso rojo",
+        "tipo":  "Rojo",
         "precio": "1000"
     },
 
@@ -698,7 +698,7 @@
         "img": "../img/Pilusos/15.jpg",
         "categoria": "Pilusos",
         "producto":"Piluso",
-        "tipo":  "Piluso amarillo",
+        "tipo":  "Amarillo",
         "precio": "1000"
     },
 
@@ -707,7 +707,7 @@
         "img": "../img/Pilusos/16.jpg",
         "categoria": "Pilusos",
         "producto":"Piluso",
-        "tipo":  "Piluso violeta",
+        "tipo":  "Violeta",
         "precio": "1000"
     },
 
@@ -716,7 +716,7 @@
         "img": "../img/Pilusos/17.jpg",
         "categoria": "Pilusos",
         "producto":"Piluso",
-        "tipo":  "Piluso arena",
+        "tipo":  "Arena",
         "precio": "1000"
     },
 
@@ -725,7 +725,7 @@
         "img": "../img/Pilusos/18.jpg",
         "categoria": "Pilusos",
         "producto":"Piluso",
-        "tipo":  "Piluso blanco",
+        "tipo":  "Blanco",
         "precio": "1000"
     }
 
