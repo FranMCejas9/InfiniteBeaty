@@ -21,7 +21,7 @@
         "img": "../img/Anteojos/5.jpg",
         "categoria": "Anteojos",
         "producto":"Anteojo",
-        "tipo":  "Elaina",
+        "tipo":  "Elaia",
         "precio": "1500"
     },
 
@@ -644,7 +644,215 @@
         "producto":"Piluso",
         "tipo":  "Blanco",
         "precio": "1000"
+    },
+
+
+
+    
+    { 
+        "id": "86",
+        "img": "../img/Anteojos/15.jpeg",
+        "categoria": "Anteojos",
+        "producto":"Anteojo",
+        "tipo":  "Elaia",
+        "precio": "1500"
+    },
+    { 
+        "id": "87",
+        "img": "../img/Anteojos/16.jpeg",
+        "categoria": "Anteojos",
+        "producto":"Anteojo",
+        "tipo":  "Elaia",
+        "precio": "1500"
+    },
+    { 
+        "id": "88",
+        "img": "../img/Anteojos/17.jpeg",
+        "categoria": "Anteojos",
+        "producto":"Anteojo",
+        "tipo":  "Elaia",
+        "precio": "1500"
+    },
+    { 
+        "id": "89",
+        "img": "../img/Anteojos/18.jpeg",
+        "categoria": "Anteojos",
+        "producto":"Anteojo",
+        "tipo":  "Greta",
+        "precio": "1500"
+    },
+    { 
+        "id": "90",
+        "img": "../img/Anteojos/19.jpeg",
+        "categoria": "Anteojos",
+        "producto":"Anteojo",
+        "tipo":  "Armazón Jamie",
+        "precio": "1500"
+    },
+    { 
+        "id": "91",
+        "img": "../img/Anteojos/20.jpeg",
+        "categoria": "Anteojos",
+        "producto":"Anteojo",
+        "tipo":  "Trinity",
+        "precio": "1500"
+    },
+
+    { 
+        "id": "92",
+        "img": "../img/Anteojos/21.jpeg",
+        "categoria": "Anteojos",
+        "producto":"Anteojo",
+        "tipo":  "Neus",
+        "precio": "1500"
+    },
+    { 
+        "id": "93",
+        "img": "../img/Anteojos/22.jpeg",
+        "categoria": "Anteojos",
+        "producto":"Anteojo",
+        "tipo":  "Neus",
+        "precio": "1500"
+    },
+    { 
+        "id": "94",
+        "img": "../img/Anteojos/23.jpeg",
+        "categoria": "Anteojos",
+        "producto":"Anteojo",
+        "tipo":  "Rosalia",
+        "precio": "1500"
+    },
+    { 
+        "id": "95",
+        "img": "../img/Anteojos/24.jpeg",
+        "categoria": "Anteojos",
+        "producto":"Anteojo",
+        "tipo":  "Lisa",
+        "precio": "1500"
+    },
+    { 
+        "id": "96",
+        "img": "../img/Anteojos/25.jpeg",
+        "categoria": "Anteojos",
+        "producto":"Anteojo",
+        "tipo":  "Max",
+        "precio": "1500"
+    },
+    { 
+        "id": "97",
+        "img": "../img/Anteojos/26.jpeg",
+        "categoria": "Anteojos",
+        "producto":"Anteojo",
+        "tipo":  "Juliette",
+        "precio": "1500"
+    },
+    { 
+        "id": "98",
+        "img": "../img/Anteojos/27.jpeg",
+        "categoria": "Anteojos",
+        "producto":"Anteojo",
+        "tipo":  "Luna",
+        "precio": "1500"
+    },
+    { 
+        "id": "99",
+        "img": "../img/Anteojos/28.jpeg",
+        "categoria": "Anteojos",
+        "producto":"Anteojo",
+        "tipo":  "Madison",
+        "precio": "1500"
+    },
+    { 
+        "id": "100",
+        "img": "../img/Anteojos/29.jpeg",
+        "categoria": "Anteojos",
+        "producto":"Anteojo",
+        "tipo":  "Madison",
+        "precio": "1500"
+    },
+    { 
+        "id": "101",
+        "img": "../img/Anteojos/30.jpeg",
+        "categoria": "Anteojos",
+        "producto":"Anteojo",
+        "tipo":  "Madison",
+        "precio": "1500"
+    },
+    { 
+        "id": "102",
+        "img": "../img/Anteojos/31.jpeg",
+        "categoria": "Anteojos",
+        "producto":"Anteojo",
+        "tipo":  "Antonia",
+        "precio": "1500"
+    },
+
+
+
+
+
+    { 
+        "id": "103",
+        "img": "../img/Aros/6.jpg",
+        "categoria": "Aros",
+        "producto":"Aro",
+        "tipo":  "Argollas acero dorado",
+        "precio": "450"
+    },
+    { 
+        "id": "104",
+        "img": "../img/Aros/7.jpg",
+        "categoria": "Aros",
+        "producto":"Aro",
+        "tipo":  "Argollas acero dorado",
+        "precio": "450"
+    },
+    { 
+        "id": "105",
+        "img": "../img/Aros/8.jpg",
+        "categoria": "Aros",
+        "producto":"Aro",
+        "tipo":  "Argollas acero quirúrgico",
+        "precio": "400"
+    },
+    { 
+        "id": "106",
+        "img": "../img/Aros/9.jpg",
+        "categoria": "Aros",
+        "producto":"Aro",
+        "tipo":  "Piercing hoja",
+        "precio": "500"
+    },
+    { 
+        "id": "107",
+        "img": "../img/Aros/10.jpg",
+        "categoria": "Aros",
+        "producto":"Aro",
+        "tipo":  "Piercing estrella",
+        "precio": "500"
+    },
+    { 
+        "id": "108",
+        "img": "../img/Aros/11.jpg",
+        "categoria": "Aros",
+        "producto":"Aro",
+        "tipo":  "Piercing pluma",
+        "precio": "500"
+    },
+    { 
+        "id": "109",
+        "img": "../img/Aros/12.jpg",
+        "categoria": "Aros",
+        "producto":"Aro",
+        "tipo":  "Gancho Francés dorado",
+        "precio": "500"
+    },
+    { 
+        "id": "110",
+        "img": "../img/Aros/13.jpg",
+        "categoria": "Aros",
+        "producto":"Aro",
+        "tipo":  "Gancho Francés beige",
+        "precio": "500"
     }
-
-
 ]
