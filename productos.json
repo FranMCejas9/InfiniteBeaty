@@ -687,7 +687,7 @@
         "categoria": "Anteojos",
         "producto":"Anteojo",
         "tipo":  "Armazón Jamie",
-        "precio": "1500"
+        "precio": "2000"
     },
     { 
         "id": "91",
@@ -844,7 +844,7 @@
         "img": "../img/Aros/12.jpg",
         "categoria": "Aros",
         "producto":"Aro",
-        "tipo":  "Gancho Francés dorado",
+        "tipo":  "Gancho Francés beige",
         "precio": "500"
     },
     { 
@@ -852,7 +852,7 @@
         "img": "../img/Aros/13.jpg",
         "categoria": "Aros",
         "producto":"Aro",
-        "tipo":  "Gancho Francés beige",
+        "tipo":  "Gancho Francés dorado",
         "precio": "500"
     }
 ]
